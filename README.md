@@ -1,11 +1,13 @@
-# Otterscan v2.0.0-alpha1 enabled Erigon
+# Otterscan v2.1.0-alpha enabled Erigon
 
-This branch contains the experimental version of Erigon with Otterscan API **v2.0.0-alpha1**.
+This branch contains the experimental version of Erigon with Otterscan API **v2.1.0-alpha**.
 
 Compatibility:
 
-- Erigon v2.48.1
-- Otterscan v2.0.0-alpha1
+- Erigon v2.49.3
+- Otterscan v2.1.0-alpha
+
+> This version is compatible with v2.0.0-alpha. If you are currently running it, you can just replace the binary as there were no DB model breaking changes. New DB tables will be populated during the first run though.
 
 ## Warnings/disclaimers (READ THIS FIRST!!!)
 
