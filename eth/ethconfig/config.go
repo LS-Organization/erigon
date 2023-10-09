@@ -255,6 +255,8 @@ type Config struct {
 	// Embedded Silkworm support
 	SilkwormEnabled bool
 	SilkwormPath    string
+
+	Ots2 bool
 }
 
 type Sync struct {
