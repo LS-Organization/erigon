@@ -149,6 +149,13 @@ func OtsStages(ctx context.Context, caCfg ContractAnalyzerCfg) []*Stage {
 			Prune:       NoopStagePrune(ctx, caCfg),
 		},
 		{
+			ID:          stages.OtsFeeRecipient,
+			Description: "Block fee recipient indexer",
+			Forward:     GenericStageForwardFunc(ctx, caCfg, stages.Bodies, FeeRecipientExecutor),
+			Unwind:      GenericStageUnwindFunc(ctx, caCfg, nil),
+			Prune:       NoopStagePrune(ctx, caCfg),
+		},
+		{
 			ID:          stages.OtsWithdrawals,
 			Description: "CL withdrawals indexer",
 			Forward:     GenericStageForwardFunc(ctx, caCfg, stages.Bodies, WithdrawalsExecutor),

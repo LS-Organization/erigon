@@ -68,7 +68,8 @@ var (
 	OtsERC20And721Holdings  SyncStage = "OtsERC20And721Holdings"
 	OtsERC20And721Transfers SyncStage = "OtsERC20And721Transfers"
 
-	OtsWithdrawals SyncStage = "OtsWithdrawals"
+	OtsFeeRecipient SyncStage = "OtsFeeRecipient"
+	OtsWithdrawals  SyncStage = "OtsWithdrawals"
 )
 
 var AllStages = []SyncStage{

@@ -502,6 +502,12 @@ var cmdResetOtsERC20And721Holdings = &cobra.Command{
 	Run:   runResetStage(stages.OtsERC20And721Holdings, "", nil),
 }
 
+var cmdResetOtsFeeRecipient = &cobra.Command{
+	Use:   "reset_ots_fee_recipient",
+	Short: "",
+	Run:   runResetStage(stages.OtsFeeRecipient, "", nil),
+}
+
 var cmdResetOtsWithdrawals = &cobra.Command{
 	Use:   "reset_ots_withdrawals",
 	Short: "",
@@ -967,6 +973,9 @@ func init() {
 
 	withDataDir(cmdResetOtsERC20And721Holdings)
 	rootCmd.AddCommand(cmdResetOtsERC20And721Holdings)
+
+	withDataDir(cmdResetOtsFeeRecipient)
+	rootCmd.AddCommand(cmdResetOtsFeeRecipient)
 
 	withDataDir(cmdResetOtsWithdrawals)
 	rootCmd.AddCommand(cmdResetOtsWithdrawals)

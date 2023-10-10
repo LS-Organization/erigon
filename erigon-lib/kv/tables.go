@@ -467,6 +467,8 @@ const (
 	OtsERC20Holdings         = "OtsERC20Holdings"
 	OtsERC721Holdings        = "OtsERC721Holdings"
 
+	OtsFeeRecipientIndex   = "OtsFeeRecipientIndex"
+	OtsFeeRecipientCounter = "OtsFeeRecipientCounter"
 	OtsWithdrawalIdx2Block = "OtsWithdrawalIdx2Block"
 	OtsWithdrawalsIndex    = "OtsWithdrawalsIndex"
 	OtsWithdrawalsCounter  = "OtsWithdrawalsCounter"
@@ -646,6 +648,8 @@ var ChaindataTables = []string{
 	OtsERC20Holdings,
 	OtsERC721Holdings,
 
+	OtsFeeRecipientIndex,
+	OtsFeeRecipientCounter,
 	OtsWithdrawalIdx2Block,
 	OtsWithdrawalsIndex,
 	OtsWithdrawalsCounter,
@@ -785,7 +789,8 @@ var ChaindataTablesCfg = TableCfg{
 	OtsERC20Holdings:         {Flags: DupSort},
 	OtsERC721Holdings:        {Flags: DupSort},
 
-	OtsWithdrawalsCounter: {Flags: DupSort},
+	OtsFeeRecipientCounter: {Flags: DupSort},
+	OtsWithdrawalsCounter:  {Flags: DupSort},
 }
 
 var BorTablesCfg = TableCfg{

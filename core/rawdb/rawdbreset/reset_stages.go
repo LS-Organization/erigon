@@ -196,6 +196,7 @@ var Tables = map[stages.SyncStage][]string{
 	stages.OtsERC4626Indexer:       {kv.OtsERC4626, kv.OtsERC4626Counter},
 	stages.OtsERC20And721Transfers: {kv.OtsERC20TransferIndex, kv.OtsERC20TransferCounter, kv.OtsERC721TransferIndex, kv.OtsERC721TransferCounter},
 	stages.OtsERC20And721Holdings:  {kv.OtsERC20Holdings, kv.OtsERC721Holdings},
+	stages.OtsFeeRecipient:         {kv.OtsFeeRecipientIndex, kv.OtsFeeRecipientCounter},
 	stages.OtsWithdrawals:          {kv.OtsWithdrawalIdx2Block, kv.OtsWithdrawalsIndex, kv.OtsWithdrawalsCounter},
 }
 var stateBuckets = []string{

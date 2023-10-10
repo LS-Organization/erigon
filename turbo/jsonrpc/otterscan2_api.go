@@ -48,6 +48,8 @@ type Otterscan2API interface {
 	GetERC20Holdings(ctx context.Context, addr common.Address) ([]*HoldingMatch, error)
 	GetERC721Holdings(ctx context.Context, addr common.Address) ([]*HoldingMatch, error)
 
+	GetFeeRecipientList(ctx context.Context, addr common.Address, idx, count uint64) (*FeeRecipientListResult, error)
+	GetFeeRecipientCount(ctx context.Context, addr common.Address) (uint64, error)
 	GetWithdrawalsList(ctx context.Context, addr common.Address, idx, count uint64) (*WithdrawalsListResult, error)
 	GetWithdrawalsCount(ctx context.Context, addr common.Address) (uint64, error)
 
